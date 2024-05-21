@@ -1,6 +1,11 @@
 import curses
 from art import text2art
-from settings import load_settings, display_message, settings
+
+try:
+    from .settings import load_settings, display_message, settings
+except ImportError:
+    from settings import load_settings, display_message, settings
+
 
 TITLE = "EAA Commander"
 
