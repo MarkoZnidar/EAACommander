@@ -78,5 +78,8 @@ def main(stdscr):
         else:
             display_message(stdscr, "Invalid choice")
 
-if __name__ == "__main__":
+def main_entry_point():
     curses.wrapper(main)
+
+if __name__ == "__main__":
+    main_entry_point()

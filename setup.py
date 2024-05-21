@@ -2,14 +2,14 @@ from setuptools import setup, find_packages
 
 setup(
     name='EAACommander',
-    version='0.2',
+    version='0.3',
     packages=find_packages(),
     install_requires=[
         'art',
     ],
     entry_points={
         'console_scripts': [
-            'eaacommander=EAACommander.cli_client:main',
+            'eaacommander=EAACommander.cli_client:main_entry_point',
         ],
     },
     author='Marko Žnidar',
