@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='EAACommander',
-    version='0.3',
+    version='0.5',
     packages=find_packages(),
     install_requires=[
         'art',
@@ -12,6 +12,10 @@ setup(
             'eaacommander=EAACommander.cli_client:main_entry_point',
         ],
     },
+    package_data={
+        'EAACommander': ['settings.ini'],
+    },
+    include_package_data=True,
     author='Marko Žnidar',
     author_email='marko.znidar@gmail.com',
     description='A tool for Electronically Assisted Astronomy (EAA) enthusiasts',

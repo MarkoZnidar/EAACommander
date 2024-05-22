@@ -1,7 +1,8 @@
 import configparser
+import pkg_resources
 import curses
 
-CONFIG_FILE = "settings.ini"
+CONFIG_FILE = pkg_resources.resource_filename('EAACommander', 'settings.ini')
 
 # Function to load settings from the configuration file
 def load_settings():
